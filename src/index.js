@@ -6,7 +6,7 @@ import App from "./App";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App sourceName="Kontan" />
   </React.StrictMode>,
   rootElement
 );

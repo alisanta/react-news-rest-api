@@ -1,7 +1,8 @@
 import React from "react";
 import "./styles.css";
+import moment from "moment";
 import NewsFeed from "./components/Newsfeed";
-
+/*
 export default function App() {
   return (
     <div className="App">
@@ -10,3 +11,19 @@ export default function App() {
     </div>
   );
 }
+*/
+class App extends React.Component {
+  anotherMethod() {}
+  render() {
+    const todayDate = new moment();
+
+    return (
+      <div className="App">
+        <h1>News Retriever {todayDate.format("MMMM Do YYYY, h:mm:ss a")} </h1>
+        <h2>{this.props.sourceName}</h2>
+        <NewsFeed />
+      </div>
+    );
+  }
+}
+export default App;
