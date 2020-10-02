@@ -13,6 +13,9 @@ export default function App() {
 }
 */
 class App extends React.Component {
+  constructor() {
+    super()
+  }
   anotherMethod() {}
   render() {
     const todayDate = new moment();
